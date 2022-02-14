@@ -82,7 +82,7 @@ router.delete("/:id", async (req, res) => {
 
   if (!tbpelanggan) {
     return res.json({
-      message: "pelanggan tidak ditemukan",
+      message: "pelanggan tidak bisa ditemukan",
     });
   }
   await tbpelanggan.destroy();
